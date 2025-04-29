@@ -1,3 +1,31 @@
+# Docker-related
+*.log
+Dockerfile~
+docker-compose.yml
+__docker__/
+
+# Dev helper scripts
+dev.sh
+
+# Local runtime artifacts
+*.db
+*.sqlite3
+*.sqlite
+*.pdf
+*.xlsx
+*.xls
+
+# VSCode settings (if applicable)
+.vscode/
+
+# FastAPI auto-generated OpenAPI docs
+openapi.json
+
+# LangChain cache and chroma DB
+chroma_db/
+.db_cache/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

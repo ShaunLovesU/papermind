@@ -1,0 +1,23 @@
+# Excel
+pandas
+openpyxl
+langchain-experimental
+
+# PDF
+PyMuPDF
+unstructured[pdf]
+
+# AI & LangChain
+chromadb
+langchain
+langchain-openai
+langchain-community
+
+# Env
+python-dotenv
+
+# API
+fastapi
+pydantic
+requests
+
