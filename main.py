@@ -1,8 +1,8 @@
+# main.py
 from fastapi import FastAPI
 
 app = FastAPI()
 
 @app.get("/")
-def read_root():
-    return {"message": "Hello from your Dockerized LangChain App!"}
-
+def root():
+    return {"message": "PaperMind is running"}
