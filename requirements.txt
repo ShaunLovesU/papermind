@@ -20,4 +20,4 @@ python-dotenv
 fastapi
 pydantic
 requests
-
+openai>=1.0.0
