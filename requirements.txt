@@ -21,3 +21,6 @@ fastapi
 pydantic
 requests
 openai>=1.0.0
+
+#basic
+
