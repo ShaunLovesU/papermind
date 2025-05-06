@@ -22,5 +22,6 @@ pydantic
 requests
 openai>=1.0.0
 
-#basic
+#database
+neo4j
 
