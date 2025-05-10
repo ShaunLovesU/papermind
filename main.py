@@ -12,17 +12,14 @@ from app.core.pdf_parser import parse_pdf
 from app.core.triplet_extractor import extract_triplets_openai
 from io import BytesIO
 
-if __name__ == "__main__":
-    # Load test PDF
-    with open("examples/CSC475_575_Final_Report.pdf", "rb") as f:
-        file_stream = BytesIO(f.read())
+from app.core.rag_answerer import generate_answer
 
-    # Step 1: Extract cleaned text chunks
-    chunks = parse_pdf(file_stream)
+triplets = [
+    ("Transformer", "IS_BASED_ON", "Self-attention mechanism"),
+    ("Transformer", "USES", "Positional encoding"),
+]
 
-    # Step 2: Extract triplets using OpenAI
-    triplets = extract_triplets_openai(chunks)
+question = "transformer?"
+answer = generate_answer(question, triplets)
+print(answer)
 
-    # Show results
-    for h, r, t in triplets:
-        print(f"({h}) --[{r}]--> ({t})")
